@@ -10,13 +10,27 @@ function App() {
   const datas = [
     {
       id: 1,
-      title: "Lorem ipsum dolor sit.",
-      content: "Lorem ipsum dolor sit. Lorem ipsum dolor sit.",
+      title: "Rencana biaya pengobatan.",
+      content:
+        "Biaya bantuan yang diberikan untuk pasien secara bertahap selama 10 bulan dan/atau selama proses menjalani proses pengobatan (selama dana donasi mencukupi).",
     },
     {
       id: 2,
-      title: "Lorem ipsum dolor sit.",
-      content: "Lorem ipsum dolor sit. Lorem ipsum dolor sit.",
+      title: "Rencana biaya operasional",
+      content:
+        "Biaya bantuan yang diberikan untuk pasien secara bertahap selama 10 bulan dan/atau selama proses menjalani proses pengobatan (selama dana donasi mencukupi).",
+    },
+    {
+      id: 2,
+      title: "Rencana biaya operasional",
+      content:
+        "Biaya bantuan yang diberikan untuk pasien secara bertahap selama 10 bulan dan/atau selama proses menjalani proses pengobatan (selama dana donasi mencukupi).",
+    },
+    {
+      id: 2,
+      title: "Rencana biaya operasional",
+      content:
+        "Biaya bantuan yang diberikan untuk pasien secara bertahap selama 10 bulan dan/atau selama proses menjalani proses pengobatan (selama dana donasi mencukupi).",
     },
   ];
   return (
@@ -38,13 +52,7 @@ function App() {
       })} */}
       {datas.map((item, idx) => {
         return (
-          <Experiment
-            key={idx}
-            title={item.title}
-            content={item.content}
-            show={show}
-            onClick={() => setShow(!show)}
-          />
+          <Experiment key={idx} title={item.title} content={item.content} />
         );
       })}
     </div>
